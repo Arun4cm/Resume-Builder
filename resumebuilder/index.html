@@ -1,0 +1,366 @@
+<html lang="en">
+<head>
+  <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+<title>Home</title>
+<style>
+p.a {
+    font-family: "Arial";
+    font-Size: 20px;
+    color: Navy;
+    letter-spacing: 2px;
+    }
+a.c {
+    line-height: 0.0;   
+    }
+p.b {
+    font-family: "Times New Roman";
+    font-Size: 50px;
+    color: Navy;
+    letter-spacing: 2px;
+    }
+.home {
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+.home-left {
+  display: grid;
+  justify-items: center;
+}
+.home-right {
+  display: grid;
+  justify-items: center;
+}
+p.x {
+    font-family: "Times New Roman";
+    font-Size: 30px;
+    color: navy;
+    }
+a.z {
+    line-height: 0.3;   
+    }
+p.y {
+    font-family: "arial";
+    font-Size: 15px;
+    color: black;
+    }
+button.btn{
+  background: transparent;
+  color: navy;
+  border: 3px solid navy;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 25px 80px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 30px;
+/* animate and time the transitions*/
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}    
+button.btn-1:hover{
+  background-color: navy;
+  color: white;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+div.a {
+  padding: 50px;
+  border: 15px solid Navy;
+  font-size: 15px;
+  font-family: "arial";
+  color: white;
+  background-color: navy;
+  opacity: 1;
+    }
+div.footer {
+    color: Navy;
+    font-family: "Arial";
+    line-height: 0.0;   
+    letter-spacing: 2px;
+    }
+div.p {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div.q {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}   
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+.container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+h3 {
+  font-size: 1.75rem;
+  color: navy;
+  padding: 1.3rem;
+  margin: 0;
+}
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: black;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: navy;
+}
+.accordion a:hover::after {
+  border: 1px solid navy;
+}
+.accordion a.active {
+  color: navy;
+  border-bottom: 1px solid navy;
+}
+.accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: black;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid black;
+  text-align: center;
+}
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: black;
+  border: 1px solid navy;
+}
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}  
+</style>
+</head>
+<body style="background-color:white;">
+<center>
+    <br>
+    <a class="c">
+        <p class="a">Welcome to</p>
+        <p class="b"><b>Resume Builder</b></p>
+    </a> 
+    <br>
+</center>
+   <div class="home">
+       <div class="left">
+        <center>
+        <img src="img/homepic.png" height="550px" width="550px">
+        </center>
+       </div>
+       <div class="right">
+        <br><br><br><br><br><br><br><br><br>
+        <a class="z"><b>
+        <p class="x">Build your resume, Online now!</p></b>
+        <p class="y">Writing a resume is a daunting task: stressful and takes too much time. But not anymore....</p>
+        </a>
+        <a href="client.html"><button class="btn btn-1">BUILD MY RESUME</button></a>
+       </div>
+    </div>   
+<div class="a">
+<h2>ABOUT RESUME BUILDING</h2>
+Impressive Resumes! Get hired with the professional Resume Builder that will make you stand out from the crowd! Start Now!<br><br>
+This is what you can expect from our resume builder:<br><br>
+Advanced resume building technology<br>
+HR-approved professional template<br>
+An easy to use platform<br>
+Real-time reviews as you build your document<br><br>
+Ready to get started? Constructing a resume is a daunting task if you do it alone. How do you know what to include, how to format your document, what sections to highlight and what to omit? How do you build a document that truly reflects the You that you want to put out into the world? In the space of a page, you have to convey all the components that add up to make you a marketable masterpiece. Where do you even begin?<br><br>
+The last thing you want is for your resume to let you down when you are actually the most appropriate pick for the job. But even if you are the most qualified person for the job, unless your resume expresses this, nothing is guaranteed.<br><br>
+For starters, its important to note that there is no onesizefitsall approach to resume building. The document you create will vary depending on the industry that you are in, the experience you bring to the table, and what parts of your history you want to highlight. There are, however, basic guidelines that are applicable to everyone.<br><br>
+A professional resume builder is the really you need to take that leap forward in your career that youve been hoping for. Our advanced technology will help you build your resume from one of our exquisite template so that you feel confident you are putting your best foot forward as you step into the job market.<br><br>
+Our aim is to be the perfect resume builder for you, regardless of your industry and experience. The templates and your input will make your resume fly to the top of any pile.<br><br>
+Your resume is no different from a pitch document for a brilliant idea the only difference being that, in the case of a resume, the bright idea is you. If the people on the other end of the line do not get the idea by the time they get to the bottom of the page, your document has proven unsuccessful.<br><br>
+We dont want this to happen to you. We believe that everyone has the right to an expert resume. Thats why we created our resume builder. We would like to do what we can to transform your opportunities into realities.<br><br>
+Now that you know why we do what we do, its time to let you into the how. Without further ado, its time to take you through how to use our easy resume builder to propel your career in the direction you want it to go.<br><br>
+Lets get started.</div>
+<a href="client.html"><button class="btn btn-1">BUILD MY RESUME</button></a><br>
+<div class="p">
+<div class="q">
+<div class="container">
+  <h3>Frequently Asked Questions</h3>
+  <div class="accordion">
+    <div class="accordion-item">
+      <a>What is a Resume?</a>
+      <div class="content">
+        <p>
+A resume is a brief summary of personal and professional experiences, skills, and education history. Its main purpose is to show off your best self to potential employers.
+When applying for a job, your (in most cases) going to be asked for a resume accompanied by a cover letter.
+If you manage to create a GOOD resume, youre going to 2x your chances of getting hired.
+</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>How to Write a Resume for Your First Job?</a>
+      <div class="content">
+        <p>
+The process of writing a resume might seem super scary to you. After all, most resume examples you see on the web are 80% about work experience. So, what the heck can you include in your resume if you have none?
+Well, heres some good news. If your applying for an entrylevel job or an internship, no one expects you to have ANY work experience.
+Instead, you should focus on what you DO have: education, projects, volunteering experience, hobbies & interests.
+</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>What to Put on a Resume?</a>
+      <div class="content">
+        <p>
+The most common sections on a resume are:<br>
+Contact information<br>
+Resume summary or objective<br>
+Work experience<br>
+Education<br>
+If you want to personalize your resume a bit more, you can also include the following sections:<br>
+Projects<br>
+Volunteering experience<br>
+Hobbies & interests<br>
+Portfolio<br>
+</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>How to Format a Resume?</a>
+      <div class="content">
+        <p>
+There are 3 typical resume formats:<br>
+Reverse-Chronological Resume<br>
+Functional Resume<br>
+Combination Resume<br>
+In 99% of the cases, youll want to go with the Reverse Chronological resume format. Thats the format most resumes youve seen follow its main focus is your work experience, written down in reverse chronological order.
+Unless youre looking to create a career change resume, wed recommend sticking with this format.
+</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>How Long Should a Resume Be?</a>
+      <div class="content">
+        <p>
+Ah, the most popular resume question in the world: how long should your resume be?
+Short answer: one page. If you have a lot of work experience 10 years, sometimes it makes sense to make it 2 pages MAX if everything you mention is super relevant for the position your applying for.
+</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>How to Write a Resume Summary?</a>
+      <div class="content">
+        <p>
+Your resume summary is a hook that goes on top of your resume. Think of it as an introduction to the rest of your resume. It should, in 2 to 4 sentences, explain what your background is, and why its relevant for the position youre applying for.
+Want your resume summary to stand out? <br>Use this proven formula:<br>
+Professional [job title] with X+ years of work experience in [job responsibility]. In the past Y years, I have [your top 1-2 achivements]. Seeking a position of [job title] at [company name]
+</p>
+      </div>
+    </div>
+<div class="accordion-item">
+      <a>How to List Work Experience on a Resume?</a>
+      <div class="content">
+        <p>
+Work experience on a resume is one of those things thats easy to learn, hard to master.
+Each work experience entry should contain the following:<br>
+Position title<br>
+Company name/description/location<br>
+Achievements or responsibilities<br>
+Dates employed<br>
+Now, if you want to create a work experience section that stands out, you want to focus on quantifiable achievements. What this means is, instead of creating an entry like:
+Carried out sales operations
+You list an achievement:
+Hit and exceeded monthly sales KPIs for 5 months in a row.
+This shows the employer that your not just a random candidate, your an A player!
+</p>
+      </div>
+    </div>
+<div class="accordion-item">
+      <a>How to List Skills on a Resume?</a>
+      <div class="content">
+        <p>
+Simply create a skills section on your resume and list your top skills. We usually recommend going for a mix of hard and soft skills.
+</p>
+      </div>
+    </div>
+<div class="accordion-item">
+      <a>What is the Best Resume Template?</a>
+      <div class="content">
+        <p>
+Theres no such thing as the best resume template every recruiter or employer has their own personal preference. Our general recommendation is to do your research on the company and what their values are.
+For example, if your applying for a position at a bank, youd want a more professional resume template. On the other hand, if you want a job in a startup where they value innovation more, you should stick to a creative resume template.
+Finally, if your still not sure which type of template is right for the job your applying for, you can just use a simple resume template just to be safe.
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const items = document.querySelectorAll(".accordion a");
+function toggleAccordion()
+{
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
+</div>
+</div>
+<center>
+    <div class="footer">
+    <h4>Design & Developed by C16</h4>
+    <h5>&#169; Resume Builder</h5>
+    </div>
+    </center>
+</body>
+</html>

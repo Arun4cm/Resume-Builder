@@ -1,0 +1,360 @@
+<html>
+<head>
+<title>client</title>
+<style>
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.box1 {
+  background: #bfcfff;
+  width: 70rem;
+  padding: 3rem;
+  margin: 5rem auto;
+  border-radius: 0.5rem;
+}
+p.a {
+    font-family: "Arial";
+    font-Size: 20px;
+    color: Navy;
+    letter-spacing: 2px;
+    }
+a.c {
+    line-height: 0.0;   
+    }
+p.b {
+    font-family: "Times New Roman";
+    font-Size: 50px;
+    color: Navy;
+    letter-spacing: 2px;
+    } 
+.first {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.first-left {
+  display: grid;
+  justify-items: left;
+}
+.first-right {
+  display: grid;
+  justify-items: left;
+}  
+.secound {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.secound-left {
+  display: grid;
+  justify-items: left;
+}
+.secound-center {
+  display: grid;
+  justify-items: left;
+    }
+.secound-right {
+  display: grid;
+  justify-items: left;
+} 
+div.footer {
+    color: Navy;
+    font-family: "Arial";
+    line-height: 0.0;   
+    letter-spacing: 2px;
+    }
+button {  
+    color:lightgoldenrodyellow;  
+    font-size: 30px;   
+        }   
+    h1 {
+        font-family: "Arial";
+    }
+</style>
+</head>  
+<body style="background-color:white;">
+<center>
+    <br>
+    <a class="c">
+        <p class="a">Welcome to</p>
+        <p class="b"><b>Resume Builder</b></p>
+    </a> 
+    <br>
+</center> 
+    <form name="client.html" action="resume.php" method="POST">   
+    <div class="box1">      
+    <div class="first">
+    <div class="first-left">
+    <h1>Complete your Resume Heading</h1>
+    <h2>Employers will use this information to contact you..</h2>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" placeholder="Your name..">
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" placeholder="Your last name..">
+	<label for="email">E-mail Id:</label>
+    <input type="text" id="email" name="email" placeholder="Your email id..">
+	<label for="phone">Phone No:</label>
+    <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+    <label for="linkedin">Linkedin Id:</label>
+    <input type="text" id="linkedin" name="linkedin" placeholder="Your linkedin  ID..">
+    <label for="github">Github Id:</label>
+    <input type="text" id="github" name="github" placeholder="Your github ID..">
+    </div>
+    <div class="first-right"><br><br>
+    <img src="img\resume.png" height="350" width="500">    
+    </div></div></div>    
+    <div class="box1"> 
+    <div class="first">
+    <div class="first-left">
+    <img src="img\objective.png" height="400" width="500">
+    </div>
+    <div class="first-right">  
+    <h1>Objective</h1>
+    <h2>Describe your objective..</h2>
+    <label for="type">Type here:</label>
+    <textarea id="text" name="subject1" placeholder="Write about yourself.." style="height:200px"></textarea>
+    </div></div></div>     
+    <div class="box1">
+    <h1>Education</h1>
+    <h2>Add information about your educationl background..</h2>
+    <div class="secound">
+    <div class="secound-left">
+    <h3>School</h3>
+        <table border="0">
+        <tr><td>Board:</td><td><input type="text" name="sboard"></td></tr><br>
+        <tr><td>Institution:</td><td><input type="text" name="sinstitution"></td></tr>
+        <tr><td>Year of Passing:</td><td><input type="text" name="syop"></td></tr>
+        <tr><td>percentage:</td><td><input type="text" name="sper"></td></tr>
+        </table></div>
+    <div class="secound-center">
+    <h3>Intermediate</h3>
+        <table border="0">
+        <tr><td>Board:</td><td><input type="text" name="iboard"></td></tr>
+        <tr><td>Institution:</td><td><input type="text" name="iinstitution"></td></tr>
+        <tr><td>Year of Passing:</td><td><input type="text" name="iyop"></td></tr>
+        <tr><td>percentage:</td><td><input type="text" name="iper"></td></tr>
+        </table></div>
+    <div class="secound-right">
+    <h3>Degree</h3>
+        <table border="0">
+        <tr><td>Board:</td><td><input type="text" name="dboard"></td></tr>
+        <tr><td>Institution:</td><td><input type="text" name="dinstitution"></td></tr>
+        <tr><td>Year of Passing:</td><td><input type="text" name="dyop"></td></tr>
+        <tr><td>percentage:</td><td><input type="text" name="dper"></td></tr>
+        </table></div> 
+        </div></div>    
+    <div class="box1">      
+    <div class="first">
+    <div class="first-left">
+    <h1>Skills</h1>
+    <h2>Highlight 5-6 of your top skills..</h2>
+    <h5>Highiest priority=1, lowest=6.</h5>
+    <label for="1">Skill 1:</label>
+    <select id="1" name="1">
+      <option value="C">C</option>
+      <option value="JAVA">JAVA</option>
+      <option value="SQL">SQL</option>
+	  <option value="html ">HTML</option>
+      <option value="CSS ">CSS</option>
+      <option value="javascript ">javascript</option>
+      <option value="PHP">PHP</option>
+    </select>
+	<label for="2">Skill 2:</label>
+	 <select id="2" name="2">
+      <option value="C">C</option>
+      <option value="JAVA">JAVA</option>
+      <option value="SQL">SQL</option>
+	  <option value="html ">HTML</option>
+      <option value="CSS ">CSS</option>
+      <option value="javascript ">javascript</option>
+      <option value="PHP">PHP</option>
+    </select>
+	<label for="3">Skill 3:</label>
+     <select id="3" name="3">
+      <option value="C">C</option>
+      <option value="JAVA">JAVA</option>
+      <option value="SQL">SQL</option>
+	  <option value="html ">HTML</option>
+      <option value="CSS ">CSS</option>
+      <option value="javascript ">javascript</option>
+      <option value="PHP">PHP</option>
+    </select>
+	<label for="4">Skill 4:</label>
+     <select id="4" name="4">
+      <option value="C ">C</option>
+      <option value="JAVA">JAVA</option>
+      <option value="SQL">SQL</option>
+	  <option value="html ">HTML</option>
+      <option value="CSS ">CSS</option>
+      <option value="javascript ">javascript</option>
+      <option value="PHP">PHP</option>
+    </select>
+	<label for="5">Skill 5:</label>
+     <select id="5" name="5">
+      <option value="C ">C</option>
+      <option value="JAVA">JAVA</option>
+      <option value="SQL">SQL</option>
+	  <option value="html ">HTML</option>
+      <option value="CSS ">CSS</option>
+      <option value="javascript ">javascript</option>
+      <option value="PHP">PHP</option>
+    </select>
+	<label for="6">Skill 6:</label>
+     <select id="6" name="6">
+      <option value="C ">C</option>
+      <option value="JAVA">JAVA</option>
+      <option value="SQL">SQL</option>
+	  <option value="html ">HTML</option>
+      <option value="CSS ">CSS</option>
+      <option value="javascript ">javascript</option>
+      <option value="PHP">PHP</option>
+    </select>
+    </div>
+    <div class="first-right"><br><br>
+    <img src="img\skills.png" height="600" width="500"> 
+    </div></div></div>     
+    <div class="box1">      
+    <div class="first">
+    <div class="first-left"><br><br>
+    <img src="img\project.png" height="350" width="500">    
+    </div>
+    <div class="first-right">
+    <h1>Project Done</h1>
+    <h2>Employers will understand about your Technical competencies..</h2>
+    <label for="Project Title">Project Title:</label>
+    <input type="text" id="Project Title" name="projecttitle" placeholder="Your Project Title..">
+    <label for="Duration">Duration:</label>
+    <input type="text" id="Duration" name="duration" placeholder="Project Duration..">
+	<label for="Team Size">Team Size:</label>
+    <input type="text" id="Team Size" name="teamsize" placeholder="Your Team Size..">
+	<label for="Project Scope">Project Scope:</label>
+    <input type="text" id="Project Scope" name="projectscope" placeholder="Your Project Scope..">
+    <label for="Role">Role:</label>
+    <input type="text" id="Role" name="role" placeholder="Your Role in Project..">
+    </div></div></div>    
+    <div class="box1">      
+    <div class="first">
+    <div class="first-left">
+    <h1>Intership Done</h1>
+    <h2>Employers will understand about your work experience..</h2>
+    <label for="Organization">Organization:</label>
+    <input type="text" id="Organization" name="organization" placeholder="You worked organization..">
+    <label for="Duration">Duration:</label>
+    <input type="text" id="Duration" name="duration1" placeholder="Project Duration..">
+	<label for="Team Size">Team Size:</label>
+    <input type="text" id="Team Size" name="teamsize1" placeholder="Your Team Size..">
+	<label for="Project Scope">Project Scope:</label>
+    <input type="text" id="Project Scope" name="projectscope1" placeholder="Your Project Scope..">
+    <label for="Role">Role:</label>
+    <input type="text" id="Role" name="role1" placeholder="Your Role in Project..">
+    </div>
+    <div class="first-right"><br><br>
+    <img src="img\intership.png" height="350" width="500">    
+    </div></div></div>  
+    <div class="box1">
+    <div class="first">
+    <div class="first-left"><br>
+    <img src="img\training.png" height="350" width="500">    
+    </div>
+    <div class="first-right">
+    <h1>TRAINING/WORKSHOP/SEMINARS ATTENDED</h1>
+    <label for="Training">Training:</label>
+    <input type="text" name="training" placeholder="Domain..">
+    <label for="Seminar">Seminar:</label>
+    <input type="text" name="seminars" placeholder="seminar..">
+    <label for="Workshop">Workshop:</label>
+    <input type="text" name="workshop" placeholder="workshop.."> 
+    </div></div></div>
+    <div class="box1">
+    <div class="first">
+    <div class="first-left">
+    <h1>ACHIEVEMENTS & AWARDS</h1>
+    <label for="Awards 1">Awards 1:</label>
+    <input type="text" name="award" placeholder="Awards 1..">
+    <label for="Achievements 1">Achievements 1:</label>
+    <input type="text" name="achievement" placeholder="Achievements 1..">
+    <label for="Awards 2">Awards 2:</label>
+    <input type="text" name="award1" placeholder="Awards 2..">
+    <label for="Achievements 2">Achievements 2:</label>
+    <input type="text" name="achievement1" placeholder="Achievements 2..">
+    </div>
+    <div class="first-right"><br><br>
+    <img src="img\award.png" height="350" width="500">    
+    </div></div></div>
+    <div class="box1"> 
+    <div class="first">
+    <div class="first-left">
+    <img src="img\summary.png" height="400" width="500"> 
+    </div> 
+    <div class="first-right">
+    <h1>EXTRA CURRICULAR ACTIVITIES</h1>
+    <h2>Write a short summary telling more about yourself, your strenghts and experience..</h2>
+    <label for="subject">Summary:</label>
+    <textarea id="subject" name="subject2" placeholder="Write Summary about yourself.." style="height:200px"></textarea>
+    </div></div></div>
+    <div class="box1">      
+    <div class="first">
+    <div class="first-left">
+    <h1>Personal Details for communication </h1>
+    <h2>Employers will use this information to contact you..</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+    <label for="fathername">Father Name:</label>
+    <input type="text" id="fathername" name="fathername" placeholder="Your Father name..">
+    <label for="mothername">Mother Name:</label>
+    <input type="text" id="mothername" name="mothername" placeholder="Your mother name..">
+	<label for="nation">Nationality</label>
+    <input type="text" id="nation" name="nation" placeholder="Your nationality..">
+	<label for="gen">Gender:</label>
+    <input type="text" id="gender" name="gen" placeholder="Your gender..">
+    <label for="dob">Date of Birth:</label>
+    <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY">
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="add" placeholder="Your home address..">
+    </div>
+    <div class="first-right"><br><br>
+    <img src="img\contact.png" height="350" width="500">    
+    </div></div></div>
+    <div class="box1">
+    <div class="first">
+    <div class="first-left"><img src="img\declaration.png" height="350" width="500">
+    </div>
+    <div class="first-right">
+    <h1>Declaration</h1>
+    <h2>Select your resume declaration from examples listed below..</h2>
+    <select id="text" name="declaration">
+      <option>All information in this resume is true and correct to the best of my knowledge and belief.</option>
+      <option>I hereby declare that all the above information is correct and accurate.</option>
+      <option>I solemnly declare that all the information furnished in this document is free of errors to the best of my knowledge.</option>
+	  <option>I hereby declare that the information stated and furnished above are true and correct to the best of my knowledge and understanding.</option>
+    </select>
+    </div></div></div>
+    <center>
+    <input type="submit" value="Submit">
+    </center>
+    </form>
+    <br><br>
+    <center>
+    <div class="footer">
+    <h4>Design & Developed by C16</h4>
+    <h5>&#169; Resume Builder</h5>
+    </div>
+    </center>
+    </body>
+</html>
